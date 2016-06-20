@@ -1,0 +1,25 @@
+{
+  "name": "fansi",
+  "version": "0.0.1",
+  "description": "A (not so) fancy ansi parser.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kanatzidis/fansi.git"
+  },
+  "keywords": [
+    "ansi",
+    "parser",
+    "ascii",
+    "xterm"
+  ],
+  "author": "Gregori Kanatzidis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kanatzidis/fansi/issues"
+  },
+  "homepage": "https://github.com/kanatzidis/fansi#readme"
+}

@@ -52,6 +52,10 @@ function ctrlSequence(key, num) {
         case 47: return C.CHAR_ATTRS_BACKGROUND_WHITE;
         default: return C.CHAR_ATTRS_NONE;
       }
+    case 'C':
+      return C.CTRL_ARROW_RIGHT;
+    case 'D':
+      return C.CTRL_ARROW_LEFT;
     case 'J':
       num = Number(num);
       switch(num) {
@@ -84,6 +88,8 @@ const known_codes = [
   /\u001b\[(\d+?;\d+?)?H/,
   /\u001b\[([012]?)J/,
   /\u001b\[([012]?)K/,
+  /\u001b\[C/,
+  /\u001b\[D/,
 ];
 
 function isCtrlChar(c) {

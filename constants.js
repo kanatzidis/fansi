@@ -133,10 +133,4 @@ module.exports = {
     type: 'eraseLine',
     direction: 'all'
   },
-  CTRL_ARROW_RIGHT: {
-    type: 'arrowRight'
-  },
-  CTRL_ARROW_LEFT: {
-    type: 'arrowLeft'
-  },
 };

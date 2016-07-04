@@ -1,6 +1,6 @@
 {
   "name": "fansi",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A (not so) fancy ansi parser.",
   "main": "index.js",
   "scripts": {

@@ -102,10 +102,12 @@ const known_codes = [
   /\u001b\[(\d*)D/,
   /\u001b\[\?1h/,
   /\u001b\[\?1l/,
+  ///\u001b=/, // DECKPAM alternate keypad
+  ///\u001b>/, // DECKPNM numeric keypad
 ];
 
 function isCtrlChar(c) {
-  return /[A-Za-z]/.test(c);
+  return /[A-Za-z=>]/.test(c);
 }
 
 function Parser() {

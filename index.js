@@ -6,7 +6,7 @@ function ctrlSequenceReducer(code, seq) {
 
   var matches = new RegExp(code, 'g').exec(seq);
   if(matches[1] === undefined) matches[1] = '';
-  var args = matches[1].split(';');
+  var args = matches.input[matches.input.length - 1] === 'H' ? [matches[1]] : matches[1].split(';');
 
   var key = seq[seq.length - 1];
   var codes = args.map(function(arg) {
